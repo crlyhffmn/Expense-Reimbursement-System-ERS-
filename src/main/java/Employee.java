@@ -1,14 +1,12 @@
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name="employee")
 public class Employee {
     @Id
-    @Column(name="id")
-    private int id;
+    @Column(name="employee_id")
+    @GeneratedValue(strategy=GenerationType.AUTO)
+    private int employee_id;
     @Column(name="username")
     private String username;
     @Column(name="password")
@@ -23,7 +21,7 @@ public class Employee {
     public Employee(){}
 
     public Employee(int id, String username, String password, String firstName, String lastName, Boolean isManager) {
-        this.id = id;
+        this.employee_id = id;
         this.username = username;
         this.password = password;
         this.firstName = firstName;
@@ -32,11 +30,11 @@ public class Employee {
     }
 
     public int getId() {
-        return id;
+        return employee_id;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setId(int employee_id) {
+        this.employee_id = employee_id;
     }
 
     public String getUsername() {
@@ -82,7 +80,7 @@ public class Employee {
     @Override
     public String toString() {
         return "Employee{" +
-                "Employee ID = " + id +
+                "Employee ID = " + employee_id +
                 ", Username = " + username +
                 ", First Name = " + firstName +
                 ", Last Name = " + lastName +

@@ -1,15 +1,14 @@
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name="reimbursement-request")
 public class ReimbursementRequest {
     @Id
-    @Column(name="id")
-    private int id;
-    @Column(name="empID")
+    @Column(name="request_id")
+    @GeneratedValue(strategy=GenerationType.AUTO)
+    private int request_id;
+    @ManyToOne
+    @JoinColumn(name = "employee_id")
     private int empID;
     @Column(name="amount")
     private double amount;
@@ -17,11 +16,11 @@ public class ReimbursementRequest {
     private boolean approved;
 
     public int getId() {
-        return id;
+        return request_id;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setId(int request_id) {
+        this.request_id = request_id;
     }
 
     public int getEmpID() {
@@ -51,7 +50,7 @@ public class ReimbursementRequest {
     @Override
     public String toString() {
         return "Request{" +
-                "Request ID =" + id +
+                "Request ID =" + request_id +
                 "Employee ID =" + empID +
                 ", Amount = $" + amount +
                 ", Approved ='" + approved +
