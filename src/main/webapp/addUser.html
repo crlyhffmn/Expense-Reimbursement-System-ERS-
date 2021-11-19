@@ -6,7 +6,25 @@
     <title>Employee Registration</title>
 </head>
 <body>
-<form action="" method="post">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="addUser.html">Employee Registration</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="employeeUpdate.html">Update Employee</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="ListServlet">List Employee(s)</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="delete.html">Delete an Employee</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<form action="AddServlet" method="post">
     <div class="form-group">
         <label>Username</label>
         <input type="text" name="username" placeholder="Username">
