@@ -19,13 +19,21 @@ public class LoginServlet extends HttpServlet {
 
         if(employees.isEmpty()) {
             // Error, invalid username
+            request.getRequestDispatcher("login.html").include(request, response);
+            out.println("<div class=\"alert alert-danger\" role=\"alert\">\n" +
+                    "  Invalid Username. Create an Account, or try again.\n" +
+                    "</div>");
         } else {
             Employee E = employees.get(0);
             String password = request.getParameter("password");
             if(E.getPassword().equals(password)) {
-                //Login
+                //Log in
             } else {
                 //Invalid password
+                request.getRequestDispatcher("login.html").include(request, response);
+                out.println("<div class=\"alert alert-danger\" role=\"alert\">\n" +
+                        "  Invalid password. Try again or contact a system administrator.\n" +
+                        "</div>");
             }
         }
 
