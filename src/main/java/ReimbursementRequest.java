@@ -10,16 +10,18 @@ public class ReimbursementRequest {
     @ManyToOne
     @JoinColumn(name = "employee_id")
     private int empID;
+    @Column(name="description")
+    private String description;
     @Column(name="amount")
     private double amount;
     @Column(name="approved")
     private boolean approved;
 
-    public int getId() {
+    public int getRequestId() {
         return request_id;
     }
 
-    public void setId(int request_id) {
+    public void setRequestId(int request_id) {
         this.request_id = request_id;
     }
 
@@ -45,6 +47,14 @@ public class ReimbursementRequest {
 
     public void setApproved(boolean approved) {
         this.approved = approved;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     @Override
