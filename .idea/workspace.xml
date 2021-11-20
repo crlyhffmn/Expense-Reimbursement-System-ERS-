@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="103dbf15-3919-4aba-ad04-7c50cf741139" name="Changes" comment="" />
+    <list default="true" id="103dbf15-3919-4aba-ad04-7c50cf741139" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ReimbursementRequestDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ReimbursementRequestDAOInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ReimbursementRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ReimbursementRequest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="HTML File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -52,6 +56,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -66,9 +71,7 @@
       <option name="adminPort" value="8005" />
       <option name="contextPath" value="/Project1" />
       <option name="docBase" value="C:\Users\Carly\Documents\GitHub\Projects\Project1\src\main\webapp" />
-      <option name="envOptions">
-        <map />
-      </option>
+      <option name="envOptions" />
       <option name="passParentEnvironmentVariables" value="true" />
       <option name="port" value="8080" />
       <option name="tomcatInfo">
