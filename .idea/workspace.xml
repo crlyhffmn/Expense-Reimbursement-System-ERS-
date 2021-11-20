@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="103dbf15-3919-4aba-ad04-7c50cf741139" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ReimbursementRequestDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin-navbar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/employeeUpdate.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -16,9 +17,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -59,6 +60,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\rvnbl\Documents\GitHub\Project1\src\main\webapp" />
       <recent name="C:\Users\Carly\Documents\GitHub\Projects\Project1\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
