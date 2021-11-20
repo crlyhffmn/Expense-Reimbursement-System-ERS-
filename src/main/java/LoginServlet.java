@@ -16,9 +16,11 @@ public class LoginServlet extends HttpServlet {
         String username = request.getParameter("username");
 
         List<Employee> employees = employeeDAO.findByUsername(username);
+        System.out.println("Size: " + employees.size());
 
-        if(employees.isEmpty()) {
+        if(employees.size() == 0) {
             // Error, invalid username
+            System.out.println("Invalid username");
             request.getRequestDispatcher("login.html").include(request, response);
             out.println("<div class=\"alert alert-danger\" role=\"alert\">\n" +
                     "  Invalid Username. Create an Account, or try again.\n" +
@@ -28,11 +30,14 @@ public class LoginServlet extends HttpServlet {
             String password = request.getParameter("password");
             if(E.getPassword().equals(password)) {
                 //Log in
+                System.out.println("Login");
+                request.getRequestDispatcher("employee-navbar.html").include(request, response);
             } else {
                 //Invalid password
+                System.out.println("invalid password");
                 request.getRequestDispatcher("login.html").include(request, response);
                 out.println("<div class=\"alert alert-danger\" role=\"alert\">\n" +
-                        "  Invalid password. Try again or contact a system administrator.\n" +
+                        "  Invalid password. Please try again or contact a system administrator.\n" +
                         "</div>");
             }
         }
