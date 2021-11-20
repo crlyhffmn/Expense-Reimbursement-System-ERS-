@@ -9,6 +9,8 @@ public interface EmployeeDAOInterface<T, Id extends Serializable> {
 
     public T findById(Id id);
 
+    public List<T> findByUsername(String username);
+
     public void delete(T entity);
 
     public List<T> findAll();

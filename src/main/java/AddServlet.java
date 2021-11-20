@@ -11,8 +11,6 @@ public class AddServlet extends HttpServlet {
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
 
-        request.getRequestDispatcher("addUser.html").include(request, response);
-
         String username = request.getParameter("username");
         String password = request.getParameter("password");
         String firstName = request.getParameter("first-name");
@@ -20,20 +18,30 @@ public class AddServlet extends HttpServlet {
 
         EmployeeDAOImpl employeeDAO = new EmployeeDAOImpl();
 
-        // create employee
-        Employee employee = new Employee();
-        employee.setUsername(username);
-        employee.setPassword(password);
-        employee.setFirstName(firstName);
-        employee.setLastName(lastName);
-        employee.setManager(false); // Assume they aren't a manager, managers will need to be manually given permissions
-        //out.println(employee.toString());
+        // Check for unique username
+        if(employeeDAO.findByUsername(username).isEmpty()) {
+            // create employee
+            Employee employee = new Employee();
+            employee.setUsername(username);
+            employee.setPassword(password);
+            employee.setFirstName(firstName);
+            employee.setLastName(lastName);
+            employee.setManager(false); // Assume they aren't a manager, managers will need to be manually given permissions
+            //out.println(employee.toString());
+            employeeDAO.persist(employee);
 
-        employeeDAO.persist(employee);
+            request.getRequestDispatcher("no-user-navbar.html").include(request, response);
 
-        out.println("<div class=\"alert alert-success\" role=\"alert\">\n" +
-                "  Employee Account Created\n" +
-                "</div>");
+            out.println("<div class=\"alert alert-success\" role=\"alert\">\n" +
+                    "  Employee Account Created. Log in if desired.\n" +
+                    "</div>");
+        } else {
+
+        }
+
+
+
+
     }
 
 }

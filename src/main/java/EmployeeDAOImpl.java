@@ -27,6 +27,13 @@ public class EmployeeDAOImpl {
         return employee;
     }
 
+    public List<Employee> findByUsername(String username) {
+        employeeDAO.openCurrentSession();
+        List<Employee> employees = employeeDAO.findByUsername(username);
+        employeeDAO.closeCurrentSession();
+        return employees;
+    }
+
     public void delete(String id) {
         employeeDAO.openCurrentSessionwithTransaction();
         Employee employee = employeeDAO.findById(id);

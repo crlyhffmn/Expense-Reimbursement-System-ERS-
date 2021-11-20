@@ -75,6 +75,13 @@ public class EmployeeDAO implements EmployeeDAOInterface<Employee, String> {
         return employee;
     }
 
+    @SuppressWarnings("unchecked")
+    public List<Employee> findByUsername(String username) {
+        String hql = "FROM Employee E WHERE E.username=\"" + username + "\"";
+        List<Employee> employees = (List<Employee>) getCurrentSession().createQuery(hql).list();
+        return employees;
+    }
+
     public void delete(Employee entity) {
         getCurrentSession().delete(entity);
     }
