@@ -5,7 +5,7 @@ import javax.persistence.*;
 public class Employee {
     @Id
     @Column(name="employee_id")
-    @GeneratedValue(strategy=GenerationType.AUTO)
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private int employee_id;
     @Column(name="username")
     private String username;
