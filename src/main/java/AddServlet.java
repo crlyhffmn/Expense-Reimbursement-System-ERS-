@@ -27,7 +27,6 @@ public class AddServlet extends HttpServlet {
             employee.setFirstName(firstName);
             employee.setLastName(lastName);
             employee.setManager(false); // Assume they aren't a manager, managers will need to be manually given permissions
-            //out.println(employee.toString());
             employeeDAO.persist(employee);
 
             request.getRequestDispatcher("no-user-navbar.html").include(request, response);

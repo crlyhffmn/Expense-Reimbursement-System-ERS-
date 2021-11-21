@@ -1,15 +1,13 @@
 import javax.persistence.*;
+import javax.persistence.Entity;
 
 @Entity
-@Table(name="reimbursement-request")
+@Table(name="reimbursement_request")
 public class ReimbursementRequest {
     @Id
     @Column(name="request_id")
-    @GeneratedValue(strategy=GenerationType.AUTO)
-    private int request_id;
-    @ManyToOne
-    @JoinColumn(name = "employee_id")
-    private int empID;
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    private long request_id;
     @Column(name="description")
     private String description;
     @Column(name="amount")
@@ -17,20 +15,28 @@ public class ReimbursementRequest {
     @Column(name="approved")
     private boolean approved;
 
-    public int getRequestId() {
+    @ManyToOne(targetEntity = Employee.class, cascade = CascadeType.ALL)
+    @JoinColumn(name = "employee_id", referencedColumnName = "employee_id")
+    private Employee employee;
+
+    public ReimbursementRequest() {
+
+    }
+
+    public Employee getEmployee() {
+        return employee;
+    }
+
+    public void setEmployee(Employee employee) {
+        this.employee = employee;
+    }
+
+    public long getRequestId() {
         return request_id;
     }
 
-    public void setRequestId(int request_id) {
+    public void setRequestId(long request_id) {
         this.request_id = request_id;
-    }
-
-    public int getEmpID() {
-        return empID;
-    }
-
-    public void setEmpID(int empID) {
-        this.empID = empID;
     }
 
     public double getAmount() {
@@ -61,7 +67,7 @@ public class ReimbursementRequest {
     public String toString() {
         return "Request{" +
                 "Request ID =" + request_id +
-                "Employee ID =" + empID +
+                "Employee ID =" + employee.getId() +
                 ", Amount = $" + amount +
                 ", Approved ='" + approved +
                 '}';

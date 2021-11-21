@@ -6,7 +6,7 @@ public class Employee {
     @Id
     @Column(name="employee_id")
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-    private int employee_id;
+    private long employee_id;
     @Column(name="username")
     private String username;
     @Column(name="password")
@@ -20,7 +20,7 @@ public class Employee {
 
     public Employee(){}
 
-    public Employee(int id, String username, String password, String firstName, String lastName, Boolean isManager) {
+    public Employee(long id, String username, String password, String firstName, String lastName, Boolean isManager) {
         this.employee_id = id;
         this.username = username;
         this.password = password;
@@ -29,11 +29,11 @@ public class Employee {
         this.isManager = isManager;
     }
 
-    public int getId() {
+    public long getId() {
         return employee_id;
     }
 
-    public void setId(int employee_id) {
+    public void setId(long employee_id) {
         this.employee_id = employee_id;
     }
 

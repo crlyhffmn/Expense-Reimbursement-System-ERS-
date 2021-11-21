@@ -7,39 +7,44 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <a class="navbar-brand" href="#">Expense Reimbursement System</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="addUser.html">Employee Registration</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Reimbursement Requests
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="reimbursement-request.html">Make a Request</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">View Your Requests</a>
+                </div>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="employeeUpdate.html">Update Employee</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="ListServlet">List Employee(s)</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="delete.html">Delete an Employee</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Account Options
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Update Information</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Log Out</a>
+                </div>
             </li>
         </ul>
     </div>
 </nav>
-<form action="AddRequestServlet" method="post">
+<form action="AddRequest" method="post">
     <div class="form-group">
         <label>Description:</label>
         <textarea name="description" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="What did you purchase, and how is it a business expense?"></textarea>
     </div>
     <div class="form-group">
-        <label>Password</label>
-        <input type="password" class="form-control" name="password" placeholder="Password">
-    </div>
-    <div class="form-group">
-        <label>Amount $</label>
-        <input type="number" class="form-control" name="amount" min="0.01" step="0.01" max="2500" value="00.01" />
-    </div>
-    <div class="form-group">
-        <label>Last Name</label>
-        <input type="text" class="form-control" name="last-name" placeholder="Last Name">
+        <label>Amount (USD)</label>
+        <input type="number" class="form-control" name="amount" min="0.01" step="0.01" max="2500" placeholder="$" />
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>

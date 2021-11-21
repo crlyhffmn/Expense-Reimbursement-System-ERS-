@@ -1,4 +1,5 @@
 import javax.servlet.ServletException;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -16,7 +17,7 @@ public class LoginServlet extends HttpServlet {
         String username = request.getParameter("username");
 
         List<Employee> employees = employeeDAO.findByUsername(username);
-        System.out.println("Size: " + employees.size());
+        //System.out.println("Size: " + employees.size());
 
         if(employees.size() == 0) {
             // Error, invalid username
@@ -30,7 +31,10 @@ public class LoginServlet extends HttpServlet {
             String password = request.getParameter("password");
             if(E.getPassword().equals(password)) {
                 //Log in
-                System.out.println("Login");
+
+                Cookie cookie = new Cookie("username", username);
+                response.addCookie(cookie);
+
                 request.getRequestDispatcher("employee-navbar.html").include(request, response);
             } else {
                 //Invalid password

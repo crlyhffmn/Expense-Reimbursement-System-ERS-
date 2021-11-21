@@ -38,8 +38,8 @@ public class EmployeeDAO implements EmployeeDAOInterface<Employee, String> {
     private static SessionFactory getSessionFactory() {
         Configuration configuration = new Configuration().configure("hibernate.cfg.xml");
         configuration.addAnnotatedClass(Employee.class);
-        StandardServiceRegistryBuilder builder = new StandardServiceRegistryBuilder()
-                .applySettings(configuration.getProperties());
+        configuration.addAnnotatedClass(ReimbursementRequest.class);
+        StandardServiceRegistryBuilder builder = new StandardServiceRegistryBuilder().applySettings(configuration.getProperties());
         SessionFactory sessionFactory = configuration.buildSessionFactory(builder.build());
         System.out.println("Configured");
         return sessionFactory;
