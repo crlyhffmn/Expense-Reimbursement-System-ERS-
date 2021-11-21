@@ -39,7 +39,7 @@ public class LoginServlet extends HttpServlet {
                 } else {
                     request.getRequestDispatcher("employee-navbar.html").include(request, response);
                 }
-                out.println("<div class=\"alert alert-danger\" role=\"alert\">\n" +
+                out.println("<div class=\"alert alert-success\" role=\"alert\">\n" +
                         "Log in successful.\n" +
                         "</div>");
             } else {

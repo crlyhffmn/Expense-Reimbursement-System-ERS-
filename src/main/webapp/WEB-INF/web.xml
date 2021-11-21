@@ -35,6 +35,21 @@
         <servlet-class>Update</servlet-class>
     </servlet>
 
+    <servlet>
+        <servlet-name>ListServlet</servlet-name>
+        <servlet-class>ListServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>AdminRequest</servlet-name>
+        <servlet-class>AdminRequest</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>Modify</servlet-name>
+        <servlet-class>Modify</servlet-class>
+    </servlet>
+
     <servlet-mapping>
         <servlet-name>AddServlet</servlet-name>
         <url-pattern>/AddServlet</url-pattern>
@@ -68,6 +83,21 @@
     <servlet-mapping>
         <servlet-name>Update</servlet-name>
         <url-pattern>/Update</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ListServlet</servlet-name>
+        <url-pattern>/ListServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>AdminRequest</servlet-name>
+        <url-pattern>/AdminRequest</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>Modify</servlet-name>
+        <url-pattern>/Modify</url-pattern>
     </servlet-mapping>
 
 </web-app>
