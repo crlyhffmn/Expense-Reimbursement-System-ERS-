@@ -15,7 +15,7 @@ public class ReimbursementRequest {
     @Column(name="approved")
     private boolean approved;
 
-    @ManyToOne(targetEntity = Employee.class, cascade = CascadeType.ALL)
+    @ManyToOne(targetEntity = Employee.class)
     @JoinColumn(name = "employee_id", referencedColumnName = "employee_id")
     private Employee employee;
 

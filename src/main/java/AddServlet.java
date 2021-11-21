@@ -34,7 +34,7 @@ public class AddServlet extends HttpServlet {
             out.println("<div class=\"alert alert-success\" role=\"alert\">\n" +
                     "  Employee Account Created. Log in if desired.\n" +
                     "</div>");
-        } else {
+        } else { //Repeat username
 
         }
 

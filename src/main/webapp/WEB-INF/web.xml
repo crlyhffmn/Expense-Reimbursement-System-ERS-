@@ -20,6 +20,21 @@
         <servlet-class>AddRequest</servlet-class>
     </servlet>
 
+    <servlet>
+        <servlet-name>HomeServlet</servlet-name>
+        <servlet-class>HomeServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ViewRequestsServlet</servlet-name>
+        <servlet-class>ViewRequestsServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>Update</servlet-name>
+        <servlet-class>Update</servlet-class>
+    </servlet>
+
     <servlet-mapping>
         <servlet-name>AddServlet</servlet-name>
         <url-pattern>/AddServlet</url-pattern>
@@ -38,6 +53,21 @@
     <servlet-mapping>
         <servlet-name>AddRequest</servlet-name>
         <url-pattern>/AddRequest</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>HomeServlet</servlet-name>
+        <url-pattern>/HomeServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ViewRequestsServlet</servlet-name>
+        <url-pattern>/ViewRequestsServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>Update</servlet-name>
+        <url-pattern>/Update</url-pattern>
     </servlet-mapping>
 
 </web-app>

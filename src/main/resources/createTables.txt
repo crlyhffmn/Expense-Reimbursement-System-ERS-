@@ -21,3 +21,5 @@ CREATE TABLE `reimbursement_request` (
   KEY `employee_id` (`employee_id`),
   CONSTRAINT `employee_fk` FOREIGN KEY (`employee_id`) REFERENCES `employee` (`employee_id`)
 );
+
+INSERT INTO employee (username, password, firstName, lastName, isManager) values ('admin', 'supersecure', 'Big', 'Boss', true);

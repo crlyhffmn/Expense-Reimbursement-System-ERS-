@@ -17,7 +17,6 @@ public class LoginServlet extends HttpServlet {
         String username = request.getParameter("username");
 
         List<Employee> employees = employeeDAO.findByUsername(username);
-        //System.out.println("Size: " + employees.size());
 
         if(employees.size() == 0) {
             // Error, invalid username
@@ -35,7 +34,14 @@ public class LoginServlet extends HttpServlet {
                 Cookie cookie = new Cookie("username", username);
                 response.addCookie(cookie);
 
-                request.getRequestDispatcher("employee-navbar.html").include(request, response);
+                if(E.getManager()) {
+                    request.getRequestDispatcher("admin-navbar.html").include(request, response);
+                } else {
+                    request.getRequestDispatcher("employee-navbar.html").include(request, response);
+                }
+                out.println("<div class=\"alert alert-danger\" role=\"alert\">\n" +
+                        "Log in successful.\n" +
+                        "</div>");
             } else {
                 //Invalid password
                 System.out.println("invalid password");
