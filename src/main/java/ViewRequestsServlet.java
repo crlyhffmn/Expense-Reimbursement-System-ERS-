@@ -19,7 +19,6 @@ public class ViewRequestsServlet extends HttpServlet {
             if(!username.equals("") || username!=null) {
                 List<Employee> employees = employeeDAO.findByUsername(username);
                 Employee E = employees.get(0);
-                System.out.println("ID: " + E.getId());
                 out.println("<table class=\"table table-striped table-bordered\">\n" +
                         "  <thead>\n" +
                         "    <tr>\n" +
