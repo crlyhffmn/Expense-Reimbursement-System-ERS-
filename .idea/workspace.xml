@@ -5,23 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="103dbf15-3919-4aba-ad04-7c50cf741139" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Delete.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DeleteServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/addUserAdmin.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/EmployeeDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EmployeeDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/EmployeeDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EmployeeDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/EmployeeDAOInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EmployeeDAOInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ReimbursementRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ReimbursementRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/createTables.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/createTables.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AddServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AddServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/addUser.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/addUser.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/admin-navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin-navbar.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/employeeUpdateManager.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/employeeUpdateManager.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/EmployeeDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EmployeeDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/EmployeeDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EmployeeDAOImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/EmployeeDAOInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EmployeeDAOInterface.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Modify.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Modify.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ReimbursementRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ReimbursementRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/createTables.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/createTables.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,8 +22,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="HTML File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>

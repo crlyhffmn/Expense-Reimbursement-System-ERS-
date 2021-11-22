@@ -1,9 +1,11 @@
 import javax.servlet.ServletException;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.List;
 
 public class AddServlet extends HttpServlet {
 
@@ -29,10 +31,22 @@ public class AddServlet extends HttpServlet {
             employee.setManager(false); // Assume they aren't a manager, managers will need to be manually given permissions
             employeeDAO.persist(employee);
 
-            request.getRequestDispatcher("no-user-navbar.html").include(request, response);
+            Cookie[] cookies = request.getCookies();
+            if(cookies!=null) {
+                String currentUsername = cookies[0].getValue();
+                if(!currentUsername.equals("") || currentUsername!=null) {
+                    List<Employee> employees = employeeDAO.findByUsername(username);
+                    Employee E = employees.get(0);
+                    if(E.getManager()) { //They are a manager, show manager options
+                        request.getRequestDispatcher("admin-navbar.html").include(request, response);
+                    }
+                } else {
+                    request.getRequestDispatcher("no-user-navbar.html").include(request, response);
+                }
+            }
 
             out.println("<div class=\"alert alert-success\" role=\"alert\">\n" +
-                    "  Employee Account Created. Log in if desired.\n" +
+                    "  Employee Account Created.\n" +
                     "</div>");
         } else { //Repeat username
 
