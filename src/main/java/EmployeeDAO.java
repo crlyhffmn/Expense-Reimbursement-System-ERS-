@@ -4,6 +4,7 @@ import org.hibernate.Transaction;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 
+import java.io.Serializable;
 import java.util.List;
 
 public class EmployeeDAO implements EmployeeDAOInterface<Employee, String> {
@@ -96,6 +97,13 @@ public class EmployeeDAO implements EmployeeDAOInterface<Employee, String> {
         List<Employee> entityList = findAll();
         for (Employee entity : entityList) {
             delete(entity);
+        }
+    }
+
+    public void deleteById(Class<?> type, Serializable id) {
+        Object persistentInstance = getCurrentSession().load(type, id);
+        if (persistentInstance != null) {
+            getCurrentSession().delete(persistentInstance);
         }
     }
 }

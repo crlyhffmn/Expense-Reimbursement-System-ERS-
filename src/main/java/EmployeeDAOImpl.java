@@ -1,3 +1,4 @@
+import java.io.Serializable;
 import java.util.List;
 
 public class EmployeeDAOImpl {
@@ -51,6 +52,12 @@ public class EmployeeDAOImpl {
     public void deleteAll() {
         employeeDAO.openCurrentSessionwithTransaction();
         employeeDAO.deleteAll();
+        employeeDAO.closeCurrentSessionwithTransaction();
+    }
+
+    public void deleteById(Class<?> type, Serializable id) {
+        employeeDAO.openCurrentSessionwithTransaction();
+        employeeDAO.deleteById(Employee.class, id);
         employeeDAO.closeCurrentSessionwithTransaction();
     }
 

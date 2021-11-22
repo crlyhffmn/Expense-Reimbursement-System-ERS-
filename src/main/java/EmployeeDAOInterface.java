@@ -17,4 +17,6 @@ public interface EmployeeDAOInterface<T, Id extends Serializable> {
 
     public void deleteAll();
 
+    public void deleteById(Class<?> type, Serializable id);
+
 }
