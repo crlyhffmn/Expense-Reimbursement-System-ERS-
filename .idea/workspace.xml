@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="103dbf15-3919-4aba-ad04-7c50cf741139" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/AdminRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Modify.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin-navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin-navbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/employeeUpdateManager.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/employeeUpdateManager.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/reimbursement-request.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/reimbursement-request.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LoginServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Update.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Update.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ViewRequestsServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ViewRequestsServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/createTables.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/createTables.txt" afterDir="false" />
-    </list>
+    <list default="true" id="103dbf15-3919-4aba-ad04-7c50cf741139" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
