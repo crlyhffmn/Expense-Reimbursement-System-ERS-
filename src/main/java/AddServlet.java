@@ -49,7 +49,10 @@ public class AddServlet extends HttpServlet {
                     "  Employee Account Created.\n" +
                     "</div>");
         } else { //Repeat username
-
+            request.getRequestDispatcher("addUser.html").include(request, response);
+            out.println("<div class=\"alert alert-danger\" role=\"alert\">\n" +
+                    "That username is taken.\n" +
+                    "</div>");
         }
 
 
