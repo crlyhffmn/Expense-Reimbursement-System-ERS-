@@ -43,6 +43,8 @@ public class AddServlet extends HttpServlet {
                 } else {
                     request.getRequestDispatcher("no-user-navbar.html").include(request, response);
                 }
+            } else {
+                request.getRequestDispatcher("no-user-navbar").include(request, response);
             }
 
             out.println("<div class=\"alert alert-success\" role=\"alert\">\n" +
