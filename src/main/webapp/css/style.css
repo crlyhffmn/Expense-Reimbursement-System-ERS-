@@ -28,9 +28,17 @@ form {
 .btn-custom {
     background-color: #66FCF1 !important;
 }
-body {
-    background-image: url("../background.jpg") !important;
+.alert {
     text-align: center;
+    width: 30%;
+    margin: auto;
+}
+body { 
+    background: url(../background4.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 * {
     font-family: 'Alef';

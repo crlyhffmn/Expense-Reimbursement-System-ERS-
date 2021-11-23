@@ -5,51 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="103dbf15-3919-4aba-ad04-7c50cf741139" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.project" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.jdt.apt.core.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/background2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/background3.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/addUser.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/addUser.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/addUserAdmin.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/addUserAdmin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin-navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin-navbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/employee-navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/employee-navbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/employeeUpdate.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/employeeUpdate.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/employeeUpdateManager.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/employeeUpdateManager.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/no-user-navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/no-user-navbar.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/reimbursement-request.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/reimbursement-request.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AddRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AddServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AdminRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Delete.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DeleteServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Employee.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/EmployeeDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/EmployeeDAOImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/EmployeeDAOInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/HomeServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ListServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LoginServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LogoutServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Modify.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ReimbursementRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ReimbursementRequestDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ReimbursementRequestDAOImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ReimbursementRequestDAOInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Update.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ViewRequestsServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/createTables.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dbConfig.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/style.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
