@@ -1,0 +1,37 @@
+.navbar-custom {
+    background-color:rgb(11, 12, 16, .75);
+}
+.navbar-custom .navbar-brand, .navbar-custom .navbar-text {
+    color:#66FCF1;
+}
+.nav-item .nav-link{
+    color:#66FCF1;
+}
+.form-holder {
+    padding: 20px;
+}
+div.form {
+    margin: auto;
+    padding: 20px;
+    background-color: #C5C6C7;
+    border-radius: 10px;
+    display: block;
+    text-align: center;
+    width: 40%;
+}
+form {
+    text-align: left;
+}
+.button-holder {
+    text-align: center;
+}
+.btn-custom {
+    background-color: #66FCF1 !important;
+}
+body {
+    background-image: url("../background.jpg") !important;
+    text-align: center;
+}
+* {
+    font-family: 'Alef';
+}

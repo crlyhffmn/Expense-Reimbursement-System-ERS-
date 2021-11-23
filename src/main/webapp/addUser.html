@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link href='https://fonts.googleapis.com/css?family=Alef' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -10,7 +11,7 @@
     <title>Employee Registration</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-custom">
     <a class="navbar-brand" href="HomeServlet">Expense Reimbursement System</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -26,24 +27,30 @@
         </ul>
     </div>
 </nav>
-<form action="AddServlet" method="post">
-    <div class="form-group">
-        <label>Username</label>
-        <input type="text" class="form-control" name="username" placeholder="Username">
+<div class="form-holder">
+    <div class="form">
+        <form action="AddServlet" method="post">
+            <div class="form-group">
+                <label>Username</label>
+                <input type="text" class="form-control" name="username" placeholder="Username">
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" class="form-control" name="password" placeholder="Password">
+            </div>
+            <div class="form-group">
+                <label>First Name</label>
+                <input type="text" class="form-control" name="first-name" placeholder="First Name">
+            </div>
+            <div class="form-group">
+                <label>Last Name</label>
+                <input type="text" class="form-control" name="last-name" placeholder="Last Name">
+            </div>
+            <div class="button-holder">
+                <button type="submit" class="btn btn-custom">Submit</button>
+            </div>
+        </form>
     </div>
-    <div class="form-group">
-        <label>Password</label>
-        <input type="password" class="form-control" name="password" placeholder="Password">
-    </div>
-    <div class="form-group">
-        <label>First Name</label>
-        <input type="text" class="form-control" name="first-name" placeholder="First Name">
-    </div>
-    <div class="form-group">
-        <label>Last Name</label>
-        <input type="text" class="form-control" name="last-name" placeholder="Last Name">
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-</form>
+</div>
 </body>
 </html>
