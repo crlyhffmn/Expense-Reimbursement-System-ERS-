@@ -19,13 +19,16 @@ public class AdminRequest extends HttpServlet {
             if(!username.equals("") || username!=null) {
                 List<Employee> employees = employeeDAO.findByUsername(username);
                 Employee E = employees.get(0);
-                out.println("<table class=\"table table-striped table-bordered\">\n" +
+                StringBuilder stringBuilder = new StringBuilder();
+                stringBuilder.append("<div class=\"table-holder\">");
+                stringBuilder.append("<div class=\"table\">");
+                stringBuilder.append("<table class=\"table table-striped table-bordered\">\n" +
                         "  <thead>\n" +
                         "    <tr>\n" +
                         "      <th scope=\"col\">Request ID</th>\n" +
                         "      <th scope=\"col\">Description</th>\n" +
                         "      <th scope=\"col\">Amount (USD)</th>\n" +
-                        "      <th scope=\"col\">Approval Status (T/F)</th>\n" +
+                        "      <th scope=\"col\">Approval Status</th>\n" +
                         "      <th scope=\"col\">Employee ID</th>\n" +
                         "      <th scope=\"col\">Modify</th>\n" +
                         "    </tr>\n" +
@@ -33,6 +36,7 @@ public class AdminRequest extends HttpServlet {
                         "  <tbody>");
                 if(E.getManager()) { //They are a manager, show manager options
                     request.getRequestDispatcher("/admin-navbar.html").include(request, response);
+                    out.println(stringBuilder);
                     // List all requests
                     List<ReimbursementRequest> requests = requestDAO.findAll();
                     for(ReimbursementRequest r : requests) {
@@ -41,20 +45,22 @@ public class AdminRequest extends HttpServlet {
                                 "      <td>" + r.getRequestId() + "</td>\n" +
                                 "      <td>" + r.getDescription() + "</td>\n" +
                                 "      <td>" + r.getAmount() + "</td>\n" +
-                                "      <td>" + r.isApproved() + "</td>\n" +
+                                "      <td>" + r.getApproved_string() + "</td>\n" +
                                 "      <td>" + r.getEmployee().getId() + "</td>\n");
-                        if(r.isApproved()){
+                        if(!r.getApproved_string().equals("pending")){
                             out.println("<td></td></tr>");
                         } else {
-                            out.println("      <td><form action=\"Modify\" method=\"post\"> <input type=\"hidden\" name=\"request_id\" value=\"" + r.getRequestId() + "\"> <button type=\"submit\" name=\"approved\" class=\"btn btn-primary\" value=\"true\">Accept</button> <button type=\"submit\" name=\"approved\" class=\"btn btn-primary\" value=\"false\">Reject</button> </form></td>\n" +
+                            out.println("      <td><form action=\"Modify\" method=\"post\"> <input type=\"hidden\" name=\"request_id\" value=\"" + r.getRequestId() + "\"> <div class=\"button-holder\"> <button type=\"submit\" name=\"approved\" class=\"btn btn-custom\" value=\"true\">Accept</button> <button type=\"submit\" name=\"approved\" class=\"btn btn-custom\" value=\"false\">Reject</button></div> </form></td>\n" +
                                     "    </tr>");
                         }
                     }
                     out.println("</tbody>\n" +
                             "</table>");
+                    out.println(("</div></div>"));
                 } else {
                     System.out.println("Regular User");
                     request.getRequestDispatcher("/employee-navbar.html").include(request, response);
+                    out.println(stringBuilder);
                     // List their requests
                     List<ReimbursementRequest> requests = requestDAO.findAll();
                     System.out.println("Size: " + requests.size());
@@ -65,13 +71,14 @@ public class AdminRequest extends HttpServlet {
                                     "      <td>" + r.getRequestId() + "</td>\n" +
                                     "      <td>" + r.getDescription() + "</td>\n" +
                                     "      <td>" + r.getAmount() + "</td>\n" +
-                                    "      <td>" + r.isApproved() + "</td>\n" +
+                                    "      <td>" + r.getApproved_string() + "</td>\n" +
                                     "      <td>" + r.getEmployee().getId() + "</td>\n" +
                                     "    </tr>");
                         }
                     }
                     out.println("</tbody>\n" +
                             "</table>");
+                    out.println(("</div></div>"));
                 }
             }
         }

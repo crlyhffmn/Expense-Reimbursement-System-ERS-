@@ -14,6 +14,8 @@ public class ReimbursementRequest {
     private double amount;
     @Column(name="approved")
     private boolean approved;
+    @Column(name="approved_string")
+    private String approved_string;
 
     @ManyToOne(targetEntity = Employee.class, cascade = CascadeType.ALL)
     @JoinColumn(name = "employee_id", referencedColumnName = "employee_id")
@@ -61,6 +63,14 @@ public class ReimbursementRequest {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public String getApproved_string() {
+        return approved_string;
+    }
+
+    public void setApproved_string(String approved_string) {
+        this.approved_string = approved_string;
     }
 
     @Override

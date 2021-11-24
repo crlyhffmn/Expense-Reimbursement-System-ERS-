@@ -16,6 +16,7 @@ CREATE TABLE `reimbursement_request` (
     `description` char(100) NOT NULL,
     `amount` double NOT NULL,
     `approved` boolean NOT NULL,
+    `approved_string` char(25) NOT NULL,
     `employee_id` int(11) NOT NULL,
     PRIMARY KEY (`request_id`),
   KEY `employee_id` (`employee_id`),

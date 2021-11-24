@@ -7,21 +7,42 @@
 .nav-item .nav-link{
     color:#66FCF1;
 }
-.form-holder {
+.form-holder .table-holder {
     padding: 20px;
+}
+div.table {
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+    background-color:rgb(11, 12, 16, .75);
+    color:#45A29E !important;
+    border-radius: 10px;
+    display: block;
+    text-align: center;
+    width: 80%
 }
 div.form {
     margin: auto;
     padding: 20px;
-    background-color: #C5C6C7;
+    background-color: rgb(197, 198, 199, .75);
     border-radius: 10px;
     display: block;
     text-align: center;
     width: 40%;
 }
 form {
+    margin:auto;
     text-align: left;
 }
+thead {
+    background-color: #1f2833;
+    color:#45A29E;
+}
+td {
+    background-color: rgb(197, 198, 199);
+    color:#45A29E;
+}
+
 .button-holder {
     text-align: center;
 }

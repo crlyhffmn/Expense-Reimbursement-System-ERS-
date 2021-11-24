@@ -1,0 +1,25 @@
+create database ers;
+use ers;
+
+CREATE TABLE `employee` (
+  `employee_id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` char(50) NOT NULL,
+  `password` char(50) NOT NULL,
+  `firstName` char(50) NOT NULL,
+  `lastName` char(50) NOT NULL,
+  `isManager` boolean NOT NULL,
+  PRIMARY KEY (`employee_id`)
+);
+
+CREATE TABLE `reimbursement_request` (
+  `request_id` int(11) NOT NULL AUTO_INCREMENT,
+    `description` char(100) NOT NULL,
+    `amount` double NOT NULL,
+    `approved` boolean NOT NULL,
+    `employee_id` int(11) NOT NULL,
+    PRIMARY KEY (`request_id`),
+  KEY `employee_id` (`employee_id`),
+  CONSTRAINT `employee_fk` FOREIGN KEY (`employee_id`) REFERENCES `employee` (`employee_id`)
+);
+
+INSERT INTO employee (username, password, firstName, lastName, isManager) values ('admin', 'supersecure', 'Big', 'Boss', true);

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+
+    <servlet>
+        <servlet-name>AddServlet</servlet-name>
+        <servlet-class>AddServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>LoginServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>LogoutServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>AddRequest</servlet-name>
+        <servlet-class>AddRequest</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>HomeServlet</servlet-name>
+        <servlet-class>HomeServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ViewRequestsServlet</servlet-name>
+        <servlet-class>ViewRequestsServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>Update</servlet-name>
+        <servlet-class>Update</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ListServlet</servlet-name>
+        <servlet-class>ListServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>AdminRequest</servlet-name>
+        <servlet-class>AdminRequest</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>Modify</servlet-name>
+        <servlet-class>Modify</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>Delete</servlet-name>
+        <servlet-class>Delete</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>DeleteServlet</servlet-name>
+        <servlet-class>DeleteServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AddServlet</servlet-name>
+        <url-pattern>/AddServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/LogoutServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>AddRequest</servlet-name>
+        <url-pattern>/AddRequest</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>HomeServlet</servlet-name>
+        <url-pattern>/HomeServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ViewRequestsServlet</servlet-name>
+        <url-pattern>/ViewRequestsServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>Update</servlet-name>
+        <url-pattern>/Update</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ListServlet</servlet-name>
+        <url-pattern>/ListServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>AdminRequest</servlet-name>
+        <url-pattern>/AdminRequest</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>Modify</servlet-name>
+        <url-pattern>/Modify</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>Delete</servlet-name>
+        <url-pattern>/Delete</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>DeleteServlet</servlet-name>
+        <url-pattern>/DeleteServlet</url-pattern>
+    </servlet-mapping>
+
+</web-app>

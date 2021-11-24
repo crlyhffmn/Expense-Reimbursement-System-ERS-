@@ -22,6 +22,8 @@ public class ListServlet extends HttpServlet {
                 Employee E = employees.get(0);
                 if(E.getManager()) { // Administrator
                     request.getRequestDispatcher("/admin-navbar.html").include(request, response);
+                    out.println("<div class=\"table-holder\">");
+                    out.println("<div class=\"table\">");
                     out.println("<table class=\"table table-striped table-bordered\">\n" +
                             "  <thead>\n" +
                             "    <tr>\n" +
@@ -49,6 +51,7 @@ public class ListServlet extends HttpServlet {
                     }
                     out.println("</tbody>\n" +
                             "</table>");
+                    out.println("</div></div>");
                 } else { // Normal Employee
                     request.getRequestDispatcher("/employee-navbar.html").include(request, response);
                     out.println("<div class=\"alert alert-danger\" role=\"alert\">\n" +

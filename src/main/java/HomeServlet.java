@@ -13,6 +13,8 @@ public class HomeServlet extends HttpServlet {
         PrintWriter out = response.getWriter();
         EmployeeDAOImpl employeeDAO = new EmployeeDAOImpl();
 
+        out.println("<title>Home Servlet</title>");
+
         Cookie[] cookies = request.getCookies();
         if(cookies!=null) {
             String username = cookies[0].getValue();

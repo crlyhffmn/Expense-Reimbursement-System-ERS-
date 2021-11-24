@@ -5,12 +5,100 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="103dbf15-3919-4aba-ad04-7c50cf741139" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/background2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/background3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/.idea/libraries/Maven__com_fasterxml_classmate_1_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_11_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/.idea/libraries/Maven__com_ibm_icu_icu4j_61_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_3_0_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/.idea/libraries/Maven__com_sun_xml_fastinfoset_FastInfoset_1_2_15.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/.idea/libraries/Maven__javax_persistence_javax_persistence_api_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/.idea/libraries/Maven__javax_servlet_javax_servlet_api_4_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_27.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_11_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/.idea/libraries/Maven__org_abego_treelayout_org_abego_treelayout_core_1_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/.idea/libraries/Maven__org_antlr_ST4_4_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/.idea/libraries/Maven__org_antlr_antlr4_4_9_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/.idea/libraries/Maven__org_antlr_antlr4_runtime_4_9_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/.idea/libraries/Maven__org_antlr_antlr_runtime_3_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/.idea/libraries/Maven__org_glassfish_javax_json_1_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_2_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/.idea/libraries/Maven__org_glassfish_jaxb_txw2_2_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_1_2_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/.idea/libraries/Maven__org_hibernate_orm_hibernate_core_6_0_0_Alpha9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/.idea/libraries/Maven__org_jboss_jandex_2_2_3_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_4_2_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_1_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/.idea/libraries/Maven__org_jvnet_staxex_stax_ex_1_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/.settings/org.eclipse.jdt.apt.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Project1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/java/AddRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/java/AddServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/java/AdminRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/java/Delete.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/java/DeleteServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/java/Employee.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/java/EmployeeDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/java/EmployeeDAOImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/java/EmployeeDAOInterface.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/java/HomeServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/java/ListServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/java/LoginServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/java/LogoutServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/java/Modify.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/java/ReimbursementRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/java/ReimbursementRequestDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/java/ReimbursementRequestDAOImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/java/ReimbursementRequestDAOInterface.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/java/Update.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/java/ViewRequestsServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/webapp/addUser.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/webapp/addUserAdmin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/webapp/admin-navbar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/webapp/background4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/webapp/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/webapp/employee-navbar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/webapp/employeeUpdate.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/webapp/employeeUpdateManager.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/webapp/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/webapp/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/webapp/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/webapp/no-user-navbar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/webapp/reimbursement-request.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AddRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AddRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AddServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AddServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AdminRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AdminRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HomeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HomeServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ListServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ListServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modify.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modify.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ReimbursementRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ReimbursementRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ViewRequestsServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ViewRequestsServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/createTables.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/createTables.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/background.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/background2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/background3.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/reimbursement-request.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/reimbursement-request.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/createTables.txt" beforeDir="false" afterPath="$PROJECT_DIR$/bin/src/main/resources/createTables.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dbConfig.properties" beforeDir="false" afterPath="$PROJECT_DIR$/bin/src/main/resources/dbConfig.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bin/src/main/resources/hibernate.cfg.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +157,8 @@
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\rvnbl\Documents\GitHub\Project1\src\main\webapp" />
+      <recent name="C:\Users\rvnbl\Documents\GitHub\Project1\src\main\webapp\WEB-INF" />
+      <recent name="C:\Users\rvnbl\Documents\GitHub\Project1\src\main\resources" />
       <recent name="C:\Users\rvnbl\Documents\GitHub\Project1\src\main\resources\css" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -79,7 +169,7 @@
     <configuration name="P1" type="com.poratu.idea.plugins.tomcat" factoryName="SMART_TOMCAT_FACTORY">
       <option name="adminPort" value="8005" />
       <option name="contextPath" value="/Project1" />
-      <option name="docBase" value="$PROJECT_DIR$/src/main/webapp" />
+      <option name="docBase" value="C:\Users\rvnbl\Documents\GitHub\Project1\src\main\webapp" />
       <option name="envOptions" />
       <option name="passParentEnvironmentVariables" value="true" />
       <option name="port" value="8080" />

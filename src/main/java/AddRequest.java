@@ -27,6 +27,7 @@ public class AddRequest extends HttpServlet {
                 reimbursementRequest.setDescription(description);
                 reimbursementRequest.setAmount(amount);
                 reimbursementRequest.setApproved(false);
+                reimbursementRequest.setApproved_string("pending");
                 ReimbursementRequestDAOImpl requestDAO = new ReimbursementRequestDAOImpl();
                 requestDAO.persist(reimbursementRequest);
                 request.getRequestDispatcher("/reimbursement-request.html").include(request, response);

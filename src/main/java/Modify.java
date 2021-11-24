@@ -27,11 +27,14 @@ public class Modify extends HttpServlet {
                     Boolean action = Boolean.parseBoolean(request.getParameter("approved"));
                     if(action) { // Approve
                         relevantRequest.setApproved(true);
+                        relevantRequest.setApproved_string("approved");
                         requestDAO.update(relevantRequest);
-                        response.sendRedirect("/Project1/AdminRequest");
+                        response.sendRedirect("AdminRequest");
                     } else { // Reject
-                        requestDAO.delete(request_id);
-                        request.getRequestDispatcher("/Project1/AdminRequest").include(request, response);
+                        relevantRequest.setApproved(false);
+                        relevantRequest.setApproved_string("denied");
+                        requestDAO.update(relevantRequest);
+                        response.sendRedirect("AdminRequest");
                     }
                 } else { //Regular Employee
                     out.println("<div class=\"alert alert-danger\" role=\"alert\">\n" +
